@@ -1,7 +1,24 @@
 metadata_version: 1
-name: LEO Satellite Starlink Measurement Code and Data INFOCOM 2023
-description: Starlink and terrestrial network measurement data and figure generations
-  for a measurement paper to be published in IEEE INFOCOM 2023.
+name: 'Network Characteristics of LEO Satellite Constellations: A Starlink-Based Measurement
+  from End Users'
+description: Low Earth orbit Satellite Networks (LSNs) have been advocated as a key
+  infrastructure for truly global coverage in the forthcoming 6G. This paper presents
+  our initial measurement results and observations on the end-to-end network characteristics
+  of Starlink, arguably the largest LSN constellation to date. Our findings confirm
+  that LSNs are a promising solution towards ubiquitous Internet coverage over the
+  Earth; yet, we also find that the users of Starlink experience much more dynamics
+  in throughput and latency than terrestrial network users, and even frequent outages.
+  Its user experiences are heavily affected by environmental factors such as terrain,
+  solar storms, rain, clouds, and temperature, so is the power consumption. We further
+  analyze Starlink's current bent-pipe relay strategy and its limits, particularly
+  for cross-ocean routes. We have also explored its mobility and portability potentials,
+  and extended our experiments from urban cities to wild remote areas that are facing
+  distinct practical and cultural challenges.
+tags:
+- LEO
+- Starlink
+- satellite
+- Network Measurement
 authors:
 - name: Sami Ma
   affiliations:
@@ -10,6 +27,9 @@ authors:
   affiliations:
   - name: Simon Fraser University
 - name: Long Chen
+  affiliations:
+  - name: Simon Fraser University
+- name: Haoyuan Zhao
   affiliations:
   - name: Simon Fraser University
 - name: Xiaoqiang Ma
