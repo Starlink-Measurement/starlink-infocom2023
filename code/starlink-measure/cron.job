@@ -1,5 +1,0 @@
-0 1 * * * (cd /home/pi/Starlink/starlink-measure; ./run_world_iperf3.sh ../measurements) > /home/pi/Starlink/measure.log 2>&1
-0 6 * * * (cd /home/pi/Starlink/starlink-measure; ./run_world_iperf3.sh ../measurements) > /home/pi/Starlink/measure.log 2>&1
-0 9 * * * (cd /home/pi/Starlink/starlink-measure; ./run_world_iperf3.sh ../measurements) > /home/pi/Starlink/measure.log 2>&1
-0 14 * * * (cd /home/pi/Starlink/starlink-measure; ./run_world_iperf3.sh ../measurements) > /home/pi/Starlink/measure.log 2>&1
-0 20 * * * (cd /home/pi/Starlink/starlink-measure; ./run_world_iperf3.sh ../measurements) > /home/pi/Starlink/measure.log 2>&1
