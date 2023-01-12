@@ -1,0 +1,57 @@
+{
+    "conference_title": "IEEE INFOCOM 2023", 
+    "license": "MIT", 
+    "description": "<p>Various bash and Python scripts in submodules to measure Starlink and terrestrial networks by performing iperf3, ping, traceroute, and streaming tests with Jupyter notebooks to analyze the data. The data make up is of iperf3 JSON log files and CSV files in the previous version v1.0.0.</p>", 
+    "language": "eng", 
+    "title": "Code: Network Characteristics of LEO Satellite Constellations: A Starlink-Based Measurement from End Users", 
+    "conference_url": "https://infocom2023.ieee-infocom.org", 
+    "version": "v1.0.1", 
+    "conference_dates": "17-20 May 2023", 
+    "upload_type": "software", 
+    "keywords": [
+        "LEO Satellite Network", 
+        "Network Measurement", 
+        "Starlink"
+    ], 
+    "publication_date": "2023-01-12", 
+    "creators": [
+        {
+            "affiliation": "Simon Fraser University", 
+            "name": "Sami Ma"
+        }, 
+        {
+            "affiliation": "Simon Fraser University", 
+            "name": "Yi Ching Chou"
+        }, 
+        {
+            "affiliation": "Simon Fraser University", 
+            "name": "Haoyuan Zhao"
+        }, 
+        {
+            "affiliation": "Simon Fraser University", 
+            "name": "Long Chen"
+        }, 
+        {
+            "affiliation": "Douglas College", 
+            "name": "Xiaoqiang Ma"
+        }, 
+        {
+            "affiliation": "Simon Fraser University", 
+            "name": "Jiangchuan Liu"
+        }
+    ], 
+    "access_right": "open", 
+    "conference_place": "New York City, USA", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/Starlink-Measurement/starlink-infocom2023/tree/v1.0.1", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
