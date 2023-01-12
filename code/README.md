@@ -14,7 +14,7 @@ The code is cloned from the following repositories (Tagged v1.0.0):
 - [`starlink-measure`](https://github.com/Starlink-Measurement/starlink-measure.git) contains `iperf3` and `ping` measurement scripts and
 automatically spins up AWS instances using Terraform.
 
-- [`starlink-plot`](https://github.com/Starlink-Measurement/starlink-plot.git) is a series of Jupyter Notebook that was used to generate the
+- [`starlink-plot`](https://github.com/Starlink-Measurement/starlink-plot.git) is a series of Jupyter notebooks that was used to generate the
 figures for the paper.
 
 - [`starlink-tools`](https://github.com/Starlink-Measurement/starlink-tools.git) has the code for `traceroute` and streaming measurements.
