@@ -1,0 +1,14 @@
+[Unit]
+Description=Iperf3 measurement service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+TimeoutStopSec=600
+User=pi
+ExecStart=/home/pi/Starlink/starlink-measure/run_measurements.sh
+
+[Install]
+WantedBy=multi-user.target

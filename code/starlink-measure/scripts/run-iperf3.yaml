@@ -1,0 +1,41 @@
+#cloud-config
+# Add groups to the system
+# Adds the ubuntu group with members 'root' and 'sys'
+# and the empty group hashicorp.
+groups:
+  - ubuntu: [root,sys]
+
+# Add users to the system. Users are added after groups are added.
+users:
+  - default
+  - name: terraform
+    gecos: terraform
+    shell: /bin/bash
+    primary_group: terraform
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-rsa <example-key>== comment
+
+# Downloads the iperf3 package
+packages:
+  - wget
+
+# Runs iperf3
+runcmd:
+  - sudo su terraform
+  - |
+    sudo tee '/etc/apt/apt.conf.d/01ubuntu' <<'EOF'
+    APT
+    {
+      Default-Release "focal";
+    };
+    EOF
+  - sudo echo 'deb http://ftp.ca.debian.org/debian buster main' >> /etc/apt/sources.list
+  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138 0E98404D386FA1D9 DCC9EFBF77E11517
+  - sudo apt update
+  - sudo apt install -y libiperf0=3.6-2 iperf3=3.6-2
+  - sudo apt-mark hold iperf3
+  - iperf3 -s -J -D --forceflush --logfile /home/terraform/${region}-throughput-server-send.$(date -u +"%Y-%m-%d_%H-%M-%S").log
+  - iperf3 -s -J -D --forceflush --logfile /home/terraform/${region}-throughput-server-receive.$(date -u +"%Y-%m-%d_%H-%M-%S").log -p 5202
