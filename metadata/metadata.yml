@@ -1,7 +1,7 @@
 metadata_version: 1
-name: Starlink Measurement Data Figure Generations
-description: Starlink and Shaw network measurement data and figure generations for
-  a measurement paper to be published in IEEE INFOCOM 2023.
+name: LEO Satellite Starlink Measurement Code and Data INFOCOM 2023
+description: Starlink and terrestrial network measurement data and figure generations
+  for a measurement paper to be published in IEEE INFOCOM 2023.
 authors:
 - name: Sami Ma
   affiliations:
