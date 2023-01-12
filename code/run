@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
 set -ex
+
+cp README.md /results
