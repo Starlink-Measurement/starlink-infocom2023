@@ -2,3 +2,6 @@
 set -ex
 
 cp README.md /results
+cp starlink-plot/plot_iperf3.ipynb /results
+cp starlink-plot/plot_ping.ipynb /results
+cp starlink-plot/plot_scp.ipynb /results
