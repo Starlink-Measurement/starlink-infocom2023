@@ -1,5 +1,19 @@
 # Starlink Measure
 
+# Setup
+
+Requirements:
+- `iperf3` v3.6
+- Terraform
+- AWS-cli
+
+Python packages:
+- `json`
+
+AWS-cli must be setup with `configure` and the desired regions must be enabled.
+
+# Usage
+
 Throughput measurements use `iperf3` to measure the per second TCP and UDP download and upload throughput:
 ```
 ./run_world_iperf3.sh [-nh] [-d udp_download_bits] [-u udp_upload_bits] path/to/dest/folder
