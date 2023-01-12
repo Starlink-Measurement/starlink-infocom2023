@@ -1,0 +1,9 @@
+[submodule "code/starlink-measure"]
+	path = code/starlink-measure
+	url = https://github.com/Starlink-Measurement/starlink-measure.git
+[submodule "code/starlink-tools"]
+	path = code/starlink-tools
+	url = https://github.com/Starlink-Measurement/starlink-tools.git
+[submodule "code/starlink-plot"]
+	path = code/starlink-plot
+	url = https://github.com/Starlink-Measurement/starlink-plot.git
